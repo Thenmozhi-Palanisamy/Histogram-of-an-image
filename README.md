@@ -27,7 +27,8 @@ Program:
 import cv2
 import matplotlib.pyplot as plt
 
-# Write your code to find the histogram of gray scale image and color image channels.
+ ## Write your code to find the histogram of gray scale image and color image channels.
+~~~
 gray_image = cv2.imread("gray.jpg")
 color_image = cv2.imread("color.jpg",-1)
 cv2.imshow("Gray Image",gray_image)
@@ -35,7 +36,8 @@ cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-# Display the histogram of gray scale image and any one channel histogram from color image
+## Display the histogram of gray scale image and any one channel histogram from color image
+~~~
 grayscale_image=cv2.imread("1.jpg")
 colourscale_image=cv2.imread("2.jpeg")
 hist=cv2.calcHist(grayscale_image,[0],None,[256],[0,256])
@@ -52,6 +54,7 @@ plt.stem(hist1)
 plt.show()
 
 # Write the code to perform histogram equalization of the image. 
+~~~
 greyscale=cv2.imread("1.jpg",0)
 colorscale=cv2.imread("2.jpeg")
 g=cv2.resize(greyscale,(500,400))
