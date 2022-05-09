@@ -22,7 +22,7 @@ Equalize the grayscale image using the in-built function cv2.equalizeHist().
 Print the original and equalized image using cv2.imshow() and end the program.
 
 Program:
-Developed By: THENMOZHI
+Developed By: THENMOZHI .P
 Register Number: 212221230116
 import cv2
 import matplotlib.pyplot as plt
@@ -37,7 +37,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ## Display the histogram of gray scale image and any one channel histogram from color image
-~~~
+
 grayscale_image=cv2.imread("1.jpg")
 colourscale_image=cv2.imread("2.jpeg")
 hist=cv2.calcHist(grayscale_image,[0],None,[256],[0,256])
